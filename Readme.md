@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Игорь Румянцев](https://up.htmlacademy.ru/adaptive-individual/1/user/2385251).
-* Наставник: `Неизвестно`.
+* Наставник: [Павел Нюкало](https://htmlacademy.ru/profile/nyukalopavel)
 
 ---
 
