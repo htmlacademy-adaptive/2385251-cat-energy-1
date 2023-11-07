@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи</title>
+</head>
+
+<body class="page__body">
+  <header class="main-header">
+    <a class="main-header__logo">
+      <img class="main-header__logo-image" src="*" alt="Cat Energy" width="202" height="59">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="#">
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              Каталог продукции
+            </a>
+          </li>
+          <li class="site-list__item site-list__item--active">
+            <a>
+              Подбор программы
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="main-container">
+    <section class="program-selection">
+      <div class="program-selection__wrapper">
+        <h1 class="program-selection__title">Подбор программы</h1>
+        <p class="program-selection__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <form class="program-selection__form">
+          <p class="program-selection__field-group">
+            <span class="program-selection__form-label">
+              <label class="program-selection__name" for="confirm-name">ИМЯ:*
+              </label>
+            </span>
+            <input class="program-selection__field" type="text" id="confirm-name" name="confirm-name"
+              placeholder="БАРСИК">
+          </p>
+          <p class="program-selection__field-group">
+            <span class="program-selection__form-label">
+              <label class="program-selection__weight" for="confirm-weight">Вес (кг):*
+              </label>
+            </span>
+            <input class="program-selection__field" type="text" id="confirm-weight" name="confirm-weight"
+              placeholder="7">
+          </p>
+          <p class="program-selection__field-group">
+            <span class="program-selection__form-label">
+              <label class="program-selection__age" for="confirm-age">Возраст (лет):
+              </label>
+            </span>
+            <input class="program-selection__field" type="text" id="confirm-age" name="confirm-age" placeholder="7">
+          </p>
+        </form>
+      </div>
+      <div class="program-selection__wrapper">
+        <ul class="program-selection__filter-list">
+          <li class="program-selection__filter-item">
+            <label class="program-selection__control">
+              <input class="visually-hidden program-selection__control-input program-selection__control-input--active"
+                type="radio" name="product-group" value="похудение">
+              <span class="program-selection__control-marks"></span>
+              <span class="program-selection__control-label">ПОХУДЕНИЕ</span>
+            </label>
+          </li>
+          <li class="program-selection__filter-item">
+            <label class="program-selection__control">
+              <input class="visually-hidden program-selection__control-input" type="radio" name="product-group"
+                value="Набор массы">
+              <span class="program-selection__control-marks"></span>
+              <span class="program-selection__control-label">Набор массы</span>
+            </label>
+          </li>
+          <li class="program-selection__filter-item">
+            <label class="program-selection__control">
+              <input class="visually-hidden program-selection__control-input" type="radio" name="product-group"
+                value="Не знаю (Нужен ваш совет)">
+              <span class="program-selection__control-marks"></span>
+              <span class="program-selection__control-label">Не знаю (Нужен ваш совет)</span>
+            </label>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="contacts">
+      <div class="contacts__wrapper">
+        <h1 class="contacts__title">Контактные данные (владельца кота)</h1>
+        <form class="contacts__form">
+          <p class="contacts__field-group">
+            <span class="contacts__form-label">
+              <label class="contacts__email" for="newsletter-email">E-mail:*
+              </label>
+            </span>
+            <input class="contacts__field" type="email" id="newsletter-email" name="newsletter-email"
+              placeholder="kuklachev@gmail.com">
+            <a class="contacts__icon"></a>
+          </p>
+          <p class="contacts__field-group">
+            <span class="contacts__form-label">
+              <label class="contacts__phone" for="confirm-phone">Телефон:*
+              </label>
+            </span>
+            <input class="contacts__field" type="text" id="confirm-phone" name="confirm-phone"
+              placeholder="8 (960) 900-60-90">
+            <a class="contacts__icon"></a>
+          </p>
+        </form>
+      </div>
+    </section>
+    <section class="comment">
+      <div class="comment__wrapper">
+        <h1 class="Комментарий"></h1>
+        <p class="comment__field">
+          <label class="visually-hidden" for="auth-text">Введите отзыв, в свободной форме.</label>
+          <textarea class="comment__form-field" id="auth-text" name="feedback-form-field"
+            placeholder="Расскажите обо всех повадках кота"></textarea>
+        </p>
+      </div>
+    </section>
+    <section class="additionally">
+      <div class="">
+        <h1 class="additionally__title">Дополнительно</h1>
+        <ul class="additionally__filter-list">
+          <li class="additionally__filter-item">
+            <label class="additionally__control">
+              <input class="visually-hidden additionally__input additionally__input--active" type="checkbox"
+                name="sweetener" checked="">
+              <span class="additionally__control-mark"></span>
+              <span class="additionally__control-label">сахарозаменитель</span>
+            </label>
+          </li>
+          <li class="catalog-filter-item">
+            <label class="control">
+              <input class="visually-hidden control-input" type="checkbox" name="water">
+              <span class="control-mark"></span>
+              <span class="control-label">питьевая вода</span>
+            </label>
+          </li>
+          <li class="catalog-filter-item">
+            <label class="control">
+              <input class="visually-hidden control-input" type="checkbox" name="milk">
+              <span class="control-mark"></span>
+              <span class="control-label">молоко</span>
+            </label>
+          </li>
+          <li class="catalog-filter-item">
+            <label class="control">
+              <input class="visually-hidden control-input" type="checkbox" name="vitamins">
+              <span class="control-mark"></span>
+              <span class="control-label">витамины</span>
+            </label>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <button class="main__button">Отправить заявку</button>
+    <small class="legend">* — Обязательные поля
+    </small>
+    <section class="map">
+      <div style="position:relative;overflow:hidden;"><a
+          href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps"
+          style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a
+          href="https://yandex.ru/maps/2/saint-petersburg/house/vyborgskaya_ulitsa_3/Z0kYdQNlTkUGQFtjfXV3dXpqYg==/?ll=30.347216%2C59.963336&utm_medium=mapframe&utm_source=maps&z=17.45"
+          style="color:#eee;font-size:12px;position:absolute;top:14px;">Выборгская улица, 3 — Яндекс Карты</a><iframe
+          src="https://yandex.ru/map-widget/v1/?ll=30.347216%2C59.963336&mode=whatshere&whatshere%5Bpoint%5D=30.346255%2C59.964647&whatshere%5Bzoom%5D=17&z=17.45"></iframe>
+      </div>
+      <div class="map__wrapper">
+        <div class="map__address">
+          <p class="map__description">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="map__text">ул. Большая<br> Конюшенная, д. 19/8<br> Санкт-Петербург
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
+        <a class="main-header__logo">
+          <img class="main-header__logo-image" src="img/logo-footure.svg" alt="Cat Energy" width="128" height="24">
+        </a>
+      </div>
+      <div class="main-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="#">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="#">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="#">
+            </a>
+          </li>
+      </div>
+      <div class="main-footer__copyright copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="main-footer__htmlacademy" src="img/htmlacademy.svg" width="226" height="30" alt="htmlacademy"></a>
+      </div>
+      </div>
+    </footer>
+  </main>
+</body>
+
+</html>
