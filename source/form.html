@@ -37,63 +37,59 @@
   <main class="main-container">
     <section class="program-selection">
       <h1 class="program-selection__title">Подбор программы</h1>
-      <form class="program-selection__form">
-        <div class="program-selection__wrapper">
-          <p class="program-selection__description">Заполните анкету, и мы подберем программу питания для вашего кота
+      <p class="program-selection__description">Заполните анкету, и мы подберем программу питания для вашего кота
+      </p>
+      <form class="program-selection__form  form">
+        <div class="form__wrapper">
+          <p class="form__field-group">
+            <label class="form__label" for="confirm-name">Имя:*
+            </label>
+            <input class="form__field" type="text" id="confirm-name" name="confirm-name" placeholder="БАРСИК">
           </p>
-          <p class="program-selection__field-group">
-            <span class="program-selection__form-label">
-              <label class="program-selection__label" for="confirm-name">Имя:*
+          <p class="form__field-group">
+            <span class="form__form-label">
+              <label class="form__label" for="confirm-weight">Вес (кг):*
               </label>
             </span>
-            <input class="program-selection__field" type="text" id="confirm-name" name="confirm-name"
-              placeholder="БАРСИК">
+            <input class="form__field" type="text" id="confirm-weight" name="confirm-weight" placeholder="7">
           </p>
-          <p class="program-selection__field-group">
-            <span class="program-selection__form-label">
-              <label class="program-selection__label" for="confirm-weight">Вес (кг):*
+          <p class="form__field-group">
+            <span class="form__form-label">
+              <label class="form__label" for="confirm-age">Возраст (лет):
               </label>
             </span>
-            <input class="program-selection__field" type="text" id="confirm-weight" name="confirm-weight"
-              placeholder="7">
-          </p>
-          <p class="program-selection__field-group">
-            <span class="program-selection__form-label">
-              <label class="program-selection__label" for="confirm-age">Возраст (лет):
-              </label>
-            </span>
-            <input class="program-selection__field" type="text" id="confirm-age" name="confirm-age" placeholder="7">
+            <input class="form__field" type="text" id="confirm-age" name="confirm-age" placeholder="7">
           </p>
         </div>
-        <div class="program-selection__wrapper">
-          <ul class="program-selection__filter-list">
-            <li class="program-selection__filter-item">
-              <label class="program-selection__control">
-                <input class="visually-hidden program-selection__control-input program-selection__control-input--active"
-                  type="radio" name="product-group" value="похудение">
-                <span class="program-selection__control-marks"></span>
-                <span class="program-selection__control-label">Похудение</span>
+        <div class="form__wrapper">
+          <ul class="form__filter-list">
+            <li class="form__filter-item">
+              <label class="form__control">
+                <input class="visually-hidden form__control-input form__control-input--active" type="radio"
+                  name="product-group" value="похудение">
+                <span class="form__control-marks"></span>
+                <span class="form__control-label">Похудение</span>
               </label>
             </li>
-            <li class="program-selection__filter-item">
-              <label class="program-selection__control">
-                <input class="visually-hidden program-selection__control-input" type="radio" name="product-group"
+            <li class="form__filter-item">
+              <label class="form__control">
+                <input class="visually-hidden form__control-input" type="radio" name="product-group"
                   value="Набор массы">
-                <span class="program-selection__control-marks"></span>
-                <span class="program-selection__control-label">Набор массы</span>
+                <span class="form__control-marks"></span>
+                <span class="form__control-label">Набор массы</span>
               </label>
             </li>
-            <li class="program-selection__filter-item">
-              <label class="program-selection__control">
-                <input class="visually-hidden program-selection__control-input" type="radio" name="product-group"
+            <li class="form__filter-item">
+              <label class="form__control">
+                <input class="visually-hidden form__control-input" type="radio" name="product-group"
                   value="Не знаю (Нужен ваш совет)">
-                <span class="program-selection__control-marks"></span>
-                <span class="program-selection__control-label">Не знаю (Нужен ваш совет)</span>
+                <span class="form__control-marks"></span>
+                <span class="form__control-label">Не знаю (Нужен ваш совет)</span>
               </label>
             </li>
           </ul>
         </div>
-        <div class="program-selection__wrapper contacts">
+        <div class="form__wrapper contacts">
           <h2 class="contacts__title">Контактные данные (владельца кота)</h2>
           <p class="contacts__field-group">
             <span class="contacts__form-label">
@@ -102,7 +98,6 @@
             </span>
             <input class="contacts__field" type="email" id="newsletter-email" name="newsletter-email"
               placeholder="kuklachev@gmail.com">
-            <a class="contacts__icon"></a>
           </p>
           <p class="contacts__field-group">
             <span class="contacts__form-label">
@@ -111,10 +106,9 @@
             </span>
             <input class="contacts__field" type="tel" id="confirm-phone" name="confirm-phone"
               placeholder="8 (960) 900-60-90">
-            <a class="contacts__icon"></a>
           </p>
         </div>
-        <div class="program-selection__wrapper comment">
+        <div class="form__wrapper comment">
           <h2 class="comment__title">Комментарий</h2>
           <p class="comment__field">
             <label class="visually-hidden" for="auth-text">Введите отзыв, в свободной форме.</label>
@@ -122,7 +116,7 @@
               placeholder="Расскажите обо всех повадках кота"></textarea>
           </p>
         </div>
-        <div class="program-selection__wrapper additionally">
+        <div class="form__wrapper additionally">
           <h2 class="additionally__title">Дополнительно</h2>
           <ul class="additionally__filter-list">
             <li class="additionally__filter-item">
@@ -156,13 +150,13 @@
             </li>
           </ul>
         </div>
-        <button class="main-container__button" type="submit">Отправить заявку</button>
-        <small class="main-container__legend">* — Обязательные поля
+        <button class="form__button" type="submit">Отправить заявку</button>
+        <small class="form__legend">* — Обязательные поля
         </small>
       </form>
     </section>
     <section class="map">
-      <h1 class="visually-hidden">Сотрудничество</h1>
+      <h2 class="visually-hidden">Сотрудничество</h2>
       <div style="position:relative;overflow:hidden;"><a
           href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps"
           style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a
