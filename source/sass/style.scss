@@ -1,1 +1,23 @@
-// Начните писать стили здесь
+@import "global/mixins.scss";
+@import "global/fonts.scss";
+@import "global/body.scss";
+@import "blocks/main-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/site-list.scss";
+@import "blocks/announcement.scss";
+@import "blocks/diet.scss";
+@import "blocks/advantages.scss";
+@import "blocks/example.scss";
+@import "blocks/map.scss";
+@import "blocks/main-footer.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";
+@import "blocks/catalog.scss";
+@import "blocks/more-product.scss";
+@import "blocks/additional-products.scss";
+@import "blocks/program-selection.scss";
+@import "blocks/form.scss";
+@import "blocks/contacts.scss";
+@import "blocks/comment.scss";
+@import "blocks/additionally.scss";
+
