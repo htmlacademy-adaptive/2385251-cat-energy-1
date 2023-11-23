@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -16,17 +17,17 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="#">
+            <a class="site-list__link" href="index.html">
               Главная
             </a>
           </li>
           <li class="site-list__item">
-            <a href="#">
+            <a class="site-list__link" href="catalog.html">
               Каталог продукции
             </a>
           </li>
           <li class="site-list__item site-list__item--active">
-            <a>
+            <a class="site-list__link">
               Подбор программы
             </a>
           </li>
@@ -111,7 +112,7 @@
         <div class="form__wrapper comment">
           <h2 class="comment__title">Комментарий</h2>
           <p class="comment__field">
-            <label class="visually-hidden" for="auth-text">Введите отзыв, в свободной форме.</label>
+            <label class="visually-hidden" for="auth-text">Расскажите обо всех повАдках кота</label>
             <textarea class="comment__form-field" id="auth-text" name="feedback-form-field"
               placeholder="Расскажите обо всех повадках кота"></textarea>
           </p>
@@ -157,13 +158,11 @@
     </section>
     <section class="map">
       <h2 class="visually-hidden">Сотрудничество</h2>
-      <div style="position:relative;overflow:hidden;"><a
-          href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps"
-          style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a
-          href="https://yandex.ru/maps/2/saint-petersburg/house/vyborgskaya_ulitsa_3/Z0kYdQNlTkUGQFtjfXV3dXpqYg==/?ll=30.347216%2C59.963336&utm_medium=mapframe&utm_source=maps&z=17.45"
-          style="color:#eee;font-size:12px;position:absolute;top:14px;">Выборгская улица, 3 — Яндекс Карты</a><iframe
-          src="https://yandex.ru/map-widget/v1/?ll=30.347216%2C59.963336&mode=whatshere&whatshere%5Bpoint%5D=30.346255%2C59.964647&whatshere%5Bzoom%5D=17&z=17.45"></iframe>
-      </div>
+      <div><a
+        href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps">Санкт‑Петербург</a><a
+        href="https://yandex.ru/maps/2/saint-petersburg/house/vyborgskaya_ulitsa_3/Z0kYdQNlTkUGQFtjfXV3dXpqYg==/?ll=30.347216%2C59.963336&utm_medium=mapframe&utm_source=maps&z=17.45">Выборгская улица, 3 — Яндекс Карты</a><iframe
+        src="https://yandex.ru/map-widget/v1/?ll=30.347216%2C59.963336&mode=whatshere&whatshere%5Bpoint%5D=30.346255%2C59.964647&whatshere%5Bzoom%5D=17&z=17.45"></iframe>
+    </div>
       <div class="map__wrapper">
         <div class="map__address">
           <p class="map__description">Приглашаем к сотрудничеству дилеров!</p>
@@ -171,35 +170,36 @@
         </div>
       </div>
     </section>
-    <footer class="main-footer">
-      <div class="main-footer__wrapper">
-        <a class="main-footer__logo">
-          <img class="main-footer__logo-image" src="img/logo-footure.svg" alt="Cat Energy" width="128" height="24">
-        </a>
-      </div>
-      <div class="main-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="#">
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="#">
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="#">
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="main-footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="main-footer__htmlacademy" src="img/htmlacademy.svg" width="226" height="30" alt="htmlacademy">
-        </a>
-      </div>
-    </footer>
   </main>
+  <footer class="main-footer">
+    <div class="main-footer__wrapper">
+      <a class="main-footer__logo">
+        <img class="main-footer__logo-image" src="img/logo-footure.svg" alt="Cat Energy" width="128" height="24">
+      </a>
+    </div>
+    <div class="main-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="#">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="#">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="#">
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="main-footer__copyright copyright">
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <img class="main-footer__htmlacademy" src="img/htmlacademy.svg" width="226" height="30" alt="htmlacademy">
+      </a>
+    </div>
+  </footer>
+
 </body>
 
 </html>

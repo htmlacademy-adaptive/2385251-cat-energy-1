@@ -1,0 +1,7 @@
+.additionally__title {
+  @include form-title;
+}
+
+.additionally__filter-list {
+  @include reset-list;
+}

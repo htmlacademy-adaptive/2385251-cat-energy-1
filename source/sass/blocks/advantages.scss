@@ -1,0 +1,19 @@
+.advantages__title {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.advantages__list {
+  @include reset-list;
+}
+
+.advantages__item {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 18px;
+
+  color: #444444;
+}

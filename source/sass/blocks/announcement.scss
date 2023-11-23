@@ -1,0 +1,19 @@
+.announcement {
+  color: #ffffff;
+  background: url("../img/index-background-cat.jpg");
+}
+
+.announcement__title {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.announcement__slogan {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.announcement__selection {
+  @include button;
+}
