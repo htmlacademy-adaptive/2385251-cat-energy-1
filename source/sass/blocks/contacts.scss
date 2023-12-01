@@ -1,3 +1,23 @@
 .contacts__title {
+  margin: 0;
+  margin-bottom: 35px;
+
   @include form-title;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 76px;
+  }
+}
+
+.contacts__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
+}
+
+.contacts__field-group:first-child {
+  margin-right: auto;
 }

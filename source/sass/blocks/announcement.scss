@@ -1,6 +1,22 @@
 .announcement {
+  display: flex;
+  flex-direction: column;
+
+  width: 280px;
+  margin-left: 20px;
+
   color: #ffffff;
   background: url("../img/index-background-cat.jpg");
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    margin: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 110px 82px 110px;
+  }
 }
 
 .announcement__title {
@@ -15,5 +31,11 @@
 }
 
 .announcement__selection {
+  width: 280px;
+
   @include button;
+
+  @media (min-width: $tablet-width) {
+    width: 244px;
+  }
 }

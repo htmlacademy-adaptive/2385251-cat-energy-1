@@ -1,3 +1,17 @@
+.advantages__wrapper {
+  margin: 0 20px 49px 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    margin: 45px 30px 47px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 71px 110px 69px 110px;
+  }
+}
+
 .advantages__title {
   font-size: 36px;
   font-weight: 400;
@@ -5,7 +19,19 @@
 }
 
 .advantages__list {
+  display: flex;
+  flex-direction: column;
+
   @include reset-list;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .advantages__item {

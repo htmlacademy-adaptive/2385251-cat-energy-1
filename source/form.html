@@ -41,73 +41,78 @@
       <p class="program-selection__description">Заполните анкету, и мы подберем программу питания для вашего кота
       </p>
       <form class="program-selection__form  form">
-        <div class="form__wrapper">
-          <p class="form__field-group">
-            <label class="form__label" for="confirm-name">Имя:*
-            </label>
-            <input class="form__field" type="text" id="confirm-name" name="confirm-name" placeholder="БАРСИК">
-          </p>
-          <p class="form__field-group">
-            <span class="form__form-label">
-              <label class="form__label" for="confirm-weight">Вес (кг):*
+        <div class="form__main-wrapper">
+          <div class="form__wrapper">
+            <p class="form__field-group">
+              <label class="form__label" for="confirm-name">Имя:*
               </label>
-            </span>
-            <input class="form__field" type="text" id="confirm-weight" name="confirm-weight" placeholder="7">
-          </p>
-          <p class="form__field-group">
-            <span class="form__form-label">
-              <label class="form__label" for="confirm-age">Возраст (лет):
-              </label>
-            </span>
-            <input class="form__field" type="text" id="confirm-age" name="confirm-age" placeholder="7">
-          </p>
-        </div>
-        <div class="form__wrapper">
-          <ul class="form__filter-list">
-            <li class="form__filter-item">
-              <label class="form__control">
-                <input class="visually-hidden form__control-input form__control-input--active" type="radio"
-                  name="product-group" value="похудение">
-                <span class="form__control-marks"></span>
-                <span class="form__control-label">Похудение</span>
-              </label>
-            </li>
-            <li class="form__filter-item">
-              <label class="form__control">
-                <input class="visually-hidden form__control-input" type="radio" name="product-group"
-                  value="Набор массы">
-                <span class="form__control-marks"></span>
-                <span class="form__control-label">Набор массы</span>
-              </label>
-            </li>
-            <li class="form__filter-item">
-              <label class="form__control">
-                <input class="visually-hidden form__control-input" type="radio" name="product-group"
-                  value="Не знаю (Нужен ваш совет)">
-                <span class="form__control-marks"></span>
-                <span class="form__control-label">Не знаю (Нужен ваш совет)</span>
-              </label>
-            </li>
-          </ul>
+              <input class="form__field" type="text" id="confirm-name" name="confirm-name" placeholder="БАРСИК">
+            </p>
+            <p class="form__field-group">
+              <span class="form__form-label">
+                <label class="form__label" for="confirm-weight">Вес (кг):*
+                </label>
+              </span>
+              <input class="form__field" type="text" id="confirm-weight" name="confirm-weight" placeholder="7">
+            </p>
+            <p class="form__field-group">
+              <span class="form__form-label">
+                <label class="form__label" for="confirm-age">Возраст (лет):
+                </label>
+              </span>
+              <input class="form__field" type="text" id="confirm-age" name="confirm-age" placeholder="7">
+            </p>
+          </div>
+          <div class="form__wrapper">
+            <ul class="form__filter-list">
+              <li class="form__filter-item">
+                <label class="form__control">
+                  <input class="visually-hidden form__control-input form__control-input--active" type="radio"
+                    name="product-group" value="похудение">
+                  <span class="form__control-marks"></span>
+                  <span class="form__control-label">Похудение</span>
+                </label>
+              </li>
+              <li class="form__filter-item">
+                <label class="form__control">
+                  <input class="visually-hidden form__control-input" type="radio" name="product-group"
+                    value="Набор массы">
+                  <span class="form__control-marks"></span>
+                  <span class="form__control-label">Набор массы</span>
+                </label>
+              </li>
+              <li class="form__filter-item">
+                <label class="form__control">
+                  <input class="visually-hidden form__control-input" type="radio" name="product-group"
+                    value="Не знаю (Нужен ваш совет)">
+                  <span class="form__control-marks"></span>
+                  <span class="form__control-label">Не знаю (Нужен ваш совет)</span>
+                </label>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="form__wrapper contacts">
           <h2 class="contacts__title">Контактные данные (владельца кота)</h2>
-          <p class="contacts__field-group">
-            <span class="contacts__form-label">
-              <label class="contacts__email" for="newsletter-email">E-mail:*
-              </label>
-            </span>
-            <input class="contacts__field" type="email" id="newsletter-email" name="newsletter-email"
-              placeholder="kuklachev@gmail.com">
-          </p>
-          <p class="contacts__field-group">
-            <span class="contacts__form-label">
-              <label class="contacts__phone" for="confirm-phone">Телефон:*
-              </label>
-            </span>
-            <input class="contacts__field" type="tel" id="confirm-phone" name="confirm-phone"
-              placeholder="8 (960) 900-60-90">
-          </p>
+          <div class="contacts__wrapper">
+            <p class="contacts__field-group">
+              <span class="contacts__form-label">
+                <label class="contacts__email" for="newsletter-email">E-mail:*
+                </label>
+              </span>
+              <input class="contacts__field" type="email" id="newsletter-email" name="newsletter-email"
+                placeholder="kuklachev@gmail.com">
+            </p>
+            <p class="contacts__field-group">
+              <span class="contacts__form-label">
+                <label class="contacts__phone" for="confirm-phone">Телефон:*
+                </label>
+              </span>
+              <input class="contacts__field" type="tel" id="confirm-phone" name="confirm-phone"
+                placeholder="8 (960) 900-60-90">
+            </p>
+          </div>
+        </div>
         </div>
         <div class="form__wrapper comment">
           <h2 class="comment__title">Комментарий</h2>
