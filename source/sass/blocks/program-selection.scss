@@ -1,14 +1,15 @@
 .program-selection {
-  padding: 27px 20px 26px 20px;
+  width: 280px;
+  margin: 27px auto 26px auto;
 
   @media (min-width: $tablet-width) {
     width: 628px;
-    padding: 0 70px 60px 70px;
+    margin: 0 auto 60px auto;
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
-    padding: 0 110px 79px 110px;
+    margin: 0 auto 79px auto;
   }
 }
 
@@ -40,10 +41,6 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 66px;
-  }
-
-  @media (min-width: $desktop-width) {
     margin-bottom: 66px;
   }
 }

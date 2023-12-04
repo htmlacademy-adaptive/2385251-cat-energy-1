@@ -1,24 +1,23 @@
 .diet__wrapper {
   width: 280px;
-  margin: 20px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     width: 708px;
-    margin: 0 30px 30px 30px;
+    margin-bottom: 45px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
-    margin: 82px 110px 71px 110px;
+    margin: 82px auto 71px auto;
   }
 }
 
 .diet__list {
-  display: flex;
-
   @include reset-list;
 
   @media (min-width: $desktop-width) {
+    display: flex;
     justify-content: space-between;
   }
 }

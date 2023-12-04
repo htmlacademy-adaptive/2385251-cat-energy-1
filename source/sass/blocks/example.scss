@@ -1,16 +1,18 @@
-.example__wrapper {
-  margin: 49px 20px 40px 20px;
-
+.example {
   background-color: #eaeaea;
+}
+
+.example__wrapper {
+  margin: 49px auto 40px auto;
 
   @media (min-width: $tablet-width) {
     width: 708px;
-    margin: 45px 30px 0 30px;
+    margin: 45px auto 0 auto;
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
-    margin: 69px 110px 75px 110px;
+    margin: 69px auto 75px auto;
   }
 }
 

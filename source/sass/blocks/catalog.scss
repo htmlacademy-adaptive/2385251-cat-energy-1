@@ -1,15 +1,15 @@
 .catalog__wrapper {
   width: 320px;
-  padding: 27px 20px 25px 20px;
+  margin: 27px auto 25px auto;
 
   @media (min-width: $tablet-width) {
     width: 708px;
-    padding: 67px 30px 70px 30px;
+    margin: 67px auto 70px auto;
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
-    padding: 74px 110px 76px 110px;
+    margin: 74px auto 76px auto;
   }
 }
 
@@ -22,9 +22,7 @@
 }
 
 .catalog__product-list {
-  display: flex;
-  flex-direction: column;
-
+  margin: 0 auto;
   margin-top: 41px;
 
   @include reset-list;

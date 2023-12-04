@@ -3,12 +3,12 @@
 
   @media (min-width: $tablet-width) {
     width: 708px;
-    margin: 45px 30px 47px 30px;
+    margin: 45px auto 47px auto;
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
-    margin: 71px 110px 69px 110px;
+    margin: 71px auto 69px auto;
   }
 }
 
@@ -19,9 +19,6 @@
 }
 
 .advantages__list {
-  display: flex;
-  flex-direction: column;
-
   @include reset-list;
 
   @media (min-width: $tablet-width) {
