@@ -1,6 +1,17 @@
 .announcement {
+  width: 280px;
+  margin: 0 auto;
+
   color: #ffffff;
   background: url("../img/index-background-cat.jpg");
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
 }
 
 .announcement__title {
@@ -15,5 +26,11 @@
 }
 
 .announcement__selection {
+  width: 280px;
+
   @include button;
+
+  @media (min-width: $tablet-width) {
+    width: 244px;
+  }
 }

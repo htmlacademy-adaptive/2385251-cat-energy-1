@@ -1,4 +1,24 @@
 .main-nav {
+  display: flex;
+  flex-direction: column;
+
+  margin-left: 65px;
+
   text-decoration: none;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 436px;
+    margin-left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 475px;
+  }
+}
+
+.main-nav__toggle {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

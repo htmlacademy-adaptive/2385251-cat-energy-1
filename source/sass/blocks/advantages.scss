@@ -1,3 +1,17 @@
+.advantages__wrapper {
+  margin: 0 20px 49px 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    margin: 45px auto 47px auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 71px auto 69px auto;
+  }
+}
+
 .advantages__title {
   font-size: 36px;
   font-weight: 400;
@@ -6,6 +20,15 @@
 
 .advantages__list {
   @include reset-list;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .advantages__item {

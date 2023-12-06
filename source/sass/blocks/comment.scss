@@ -1,3 +1,14 @@
 .comment__title {
+  margin: 0;
+  margin-bottom: 38px;
+
   @include form-title;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 87px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 78px;
+  }
 }

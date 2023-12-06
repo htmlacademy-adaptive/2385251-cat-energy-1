@@ -2,6 +2,20 @@
   background-color: #eaeaea;
 }
 
+.example__wrapper {
+  margin: 49px auto 40px auto;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    margin: 45px auto 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 69px auto 75px auto;
+  }
+}
+
 .example__title {
   font-size: 36px;
   font-weight: 400;

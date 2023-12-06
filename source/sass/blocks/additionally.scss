@@ -1,7 +1,26 @@
 .additionally__title {
+  margin: 0;
+  margin-bottom: 36px;
+
   @include form-title;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 57px;
+  }
 }
 
 .additionally__filter-list {
   @include reset-list;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+
+    grid-template-columns: repeat(2, 221px);
+    gap: 32px 123px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+  }
 }

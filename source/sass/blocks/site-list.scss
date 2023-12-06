@@ -1,5 +1,16 @@
 .site-list {
+  display: flex;
+  justify-content: space-between;
+
   @include reset-list;
+
+  @media (min-width: $tablet-width) {
+    width: 436px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 475px;
+  }
 }
 
 .site-list__link {
