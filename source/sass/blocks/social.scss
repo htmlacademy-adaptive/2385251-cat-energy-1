@@ -1,3 +1,44 @@
-.social__list {
-  @include reset-list;
+.social {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  list-style: none;
+
+  text-align: center;
+
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+
+  gap: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+  }
+}
+
+.social__link {
+  &:hover {
+    path {
+      fill: #68b738;
+    }
+  }
+
+  &:focus {
+    path {
+      opacity: 0.3;
+    }
+  }
 }

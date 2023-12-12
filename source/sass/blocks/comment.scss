@@ -6,9 +6,13 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 87px;
+
+    font-size: 36px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 78px;
+
+    line-height: 36px;
   }
 }
