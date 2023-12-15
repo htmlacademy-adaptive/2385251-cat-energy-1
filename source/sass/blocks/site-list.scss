@@ -29,8 +29,10 @@
   &:hover {
     opacity: 0.6;
   }
+}
 
-  &:active {
+.site-list__item--active {
+  @media (min-width: $tablet-width) {
     border-bottom: 2px solid #68b738;
   }
 }

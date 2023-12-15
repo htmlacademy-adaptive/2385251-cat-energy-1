@@ -1,4 +1,7 @@
 .copyright__academy {
+  display: block;
+
+  width: 100%;
   margin-right: auto;
 
   font-family: "Lato", sans-serif;
@@ -12,12 +15,14 @@
   color: #444444;
 
   @media (min-width: $tablet-width) {
-    width: 113px;
+    width: 144px;
     margin-right: 0;
   }
 }
 
 .copyright__academy-logo {
+  display: block;
+
   margin-left: auto;
 
   @media (min-width: $tablet-width) {
