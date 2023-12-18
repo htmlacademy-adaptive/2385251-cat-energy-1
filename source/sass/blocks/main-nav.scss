@@ -57,11 +57,6 @@
     box-shadow: 0 6px 0 0 #000000, 0 12px 0 0 #000000;
   }
 
-  &--hover,
-  &--active {
-    background-color: #68b738;
-  }
-
   @media (min-width: $tablet-width) {
     display: none;
   }
@@ -108,7 +103,7 @@
 
   &:active::before,
   &:active::after {
-    background-color: fade(#ffffff, 30%);
+    background-color: (#ffffff, 30%);
   }
 }
 

@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
 
-
   margin-top: 20px;
   margin-bottom: 20px;
   padding-top: 20px;
@@ -30,15 +29,11 @@
 }
 
 .social__link {
-  &:hover {
-    path {
-      fill: #68b738;
-    }
+  &:hover path {
+    fill: #68b738;
   }
 
-  &:focus {
-    path {
-      opacity: 0.3;
-    }
+  &:focus path {
+    opacity: 0.3;
   }
 }

@@ -17,7 +17,7 @@
 }
 
 .additional-products__title {
-  width: 707px;
+  width: 226px;
   margin: 0 74px 36px 20px;
 
   font-size: 24px;
@@ -25,6 +25,7 @@
   line-height: 24px;
 
   @media (min-width: $tablet-width) {
+    width: 339px;
     margin: 0 auto 80px auto;
 
     font-size: 36px;
@@ -55,10 +56,6 @@
   @media (min-width: $desktop-width) {
     width: 895px;
   }
-}
-
-.additional-productsproducts__container {
-  display: flex;
 }
 
 .additional-products__title-products {

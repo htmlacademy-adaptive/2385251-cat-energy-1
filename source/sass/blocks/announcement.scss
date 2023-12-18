@@ -1,12 +1,17 @@
 .announcement {
-  box-sizing: border-box;
   width: 100%;
-  margin: 0 auto;
+  margin: auto;
+}
+
+.announcement__wrapper {
+  box-sizing: border-box;
+  margin: auto;
   padding: 27px 20px 164px 20px;
 
   color: #ffffff;
   background: url("../img/index-background-cat.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
 
   @media (min-width: $tablet-width) {
     width: 708px;
@@ -17,6 +22,12 @@
   @media (min-width: $desktop-width) {
     width: 1220px;
   }
+}
+
+.announcement__can {
+  display: block;
+
+  margin: auto;
 }
 
 .announcement__title {
@@ -39,11 +50,14 @@
 }
 
 .announcement__slogan {
-  margin: 25px 27px 29px 40px;
+  width: 198px;
+  margin: 25px auto 29px auto;
 
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
+
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     margin-left: 90px;
@@ -60,7 +74,7 @@
 
   box-sizing: border-box;
   width: 280px;
-  margin-left: 0;
+  margin: 0 auto;
   padding: 10px 40px;
 
   text-align: center;
