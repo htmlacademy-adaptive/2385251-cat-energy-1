@@ -168,9 +168,6 @@ body {
 .main-nav--opened .main-nav__toggle::after {
   transform: rotate(-45deg);
 }
-.main-nav--opened .main-nav__toggle:active::before, .main-nav--opened .main-nav__toggle:active::after {
-  background-color: #ffffff, 30%;
-}
 
 .main-nav--nojs .main-nav__wrapper {
   position: static;
@@ -348,7 +345,6 @@ body {
 }
 @media (min-width: 1440px) {
   .diet__wrapper {
-    width: 100%;
     margin: 82px auto 71px auto;
   }
 }
