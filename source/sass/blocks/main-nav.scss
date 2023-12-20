@@ -99,12 +99,6 @@
   &::after {
     transform: rotate(-45deg);
   }
-
-
-  &:active::before,
-  &:active::after {
-    background-color: (#ffffff, 30%);
-  }
 }
 
 .main-nav--nojs .main-nav__wrapper {
