@@ -1,12 +1,22 @@
 .announcement {
-  width: 280px;
-  margin: 0 auto;
+  width: 100%;
+  margin: auto;
+}
+
+.announcement__wrapper {
+  box-sizing: border-box;
+  margin: auto;
+  padding: 27px 20px 164px 20px;
 
   color: #ffffff;
   background: url("../img/index-background-cat.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 
   @media (min-width: $tablet-width) {
     width: 708px;
+
+    background: none;
   }
 
   @media (min-width: $desktop-width) {
@@ -14,23 +24,76 @@
   }
 }
 
+.announcement__can {
+  display: block;
+
+  margin: auto;
+}
+
 .announcement__title {
+  margin: 0;
+
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
+
+  @media (min-width: $tablet-width) {
+    width: 416px;
+    margin-top: 65px;
+    margin-left: 90px;
+
+    font-size: 60px;
+    line-height: 60px;
+
+    color: #000000;
+  }
 }
 
 .announcement__slogan {
+  width: 198px;
+  margin: 25px auto 29px auto;
+
   font-size: 14px;
+  font-weight: 400;
   line-height: 14px;
+
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 90px;
+
+    font-size: 20px;
+    line-height: 20px;
+
+    color: #000000;
+  }
 }
 
 .announcement__selection {
+  display: block;
+
+  box-sizing: border-box;
   width: 280px;
+  margin: 0 auto;
+  padding: 10px 40px;
+
+  text-align: center;
 
   @include button;
 
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:focus {
+    opacity: 0.7;
+  }
+
+
   @media (min-width: $tablet-width) {
     width: 244px;
+    margin-top: 50px;
+    margin-left: 90px;
+    padding: 14px 26px;
   }
 }
