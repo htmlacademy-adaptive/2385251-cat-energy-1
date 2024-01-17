@@ -10,8 +10,14 @@
 
   color: #ffffff;
   background: url("../img/index-background-cat.jpg");
+  background-color: rgba(104, 183, 56, 0.85);
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index-background-cat@2x.jpg");
+    background-size: 640px auto;
+  }
 
   @media (min-width: $tablet-width) {
     width: 708px;
@@ -21,6 +27,14 @@
 
   @media (min-width: $desktop-width) {
     width: 1220px;
+
+    background-image: url("../img/index-background-cat-desktop.jpg");
+    background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-background-cat-desktop@2x.jpg");
+      background-size: 640px auto;
+    }
   }
 }
 

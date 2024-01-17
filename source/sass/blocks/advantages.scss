@@ -80,18 +80,38 @@
 
   &--useful::before {
     background-image: url("../img/icon-leaf.svg");
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
   }
 
   &--modern::before {
     background-image: url("../img/icon-powder.svg");
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
   }
 
   &--functional::before {
     background-image: url("../img/icon-eat.svg");
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
   }
 
   &--result::before {
     background-image: url("../img/icon-time.svg");
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
   }
 
   @media (min-width: $tablet-width) {

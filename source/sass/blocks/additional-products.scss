@@ -46,15 +46,23 @@
     width: 632px;
     padding: 26px 38px 28px 38px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+
+    width: 895px;
+    padding: 15px 0 17px 0;
+  }
 }
 
 .additional-products__list {
-  border: 1px solid  #cdcdcd;
-
   @include reset-list;
 
   @media (min-width: $desktop-width) {
+    box-sizing: border-box;
     width: 895px;
+    margin-right: 81px;
   }
 }
 
@@ -111,6 +119,12 @@
 
   color: #ffffff;
   background-color: #68b738;
+
+  @media (min-width: $desktop-width) {
+    width: 62px;
+    margin-left: auto;
+    padding: 10px 91px;
+  }
 }
 
 .additional-products__description {
@@ -121,10 +135,58 @@
   line-height: 20px;
 
   color: #ffffff;
-  background: url("../img/cat-case.jpg");
+  background-color: rgba(104, 183, 56, 0.85);
+  background-image: url("../img/cat-case.jpg");
+  background-repeat: no-repeat;
+
+  &::before {
+    content: "";
+
+    display: block;
+    flex-shrink: 0;
+
+    width: 78px;
+    height: 80px;
+
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/cat-case@2x.jpg");
+    background-size: 560px auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 57px 0 60px 77px;
+
+    background-image: url("../img/cat-case-tablet.jpg");
+    background-repeat: no-repeat;
+
+    &::before {
+      width: 80px;
+      height: 83px;
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/cat-case-tablet@2x.jpg");
+      background-size: 1414px auto;
+    }
+  }
 
   @media (min-width: $desktop-width) {
+    box-sizing: border-box;
     width: 245px;
     margin-right: 0;
+    padding: 56px 42px 43px 42px;
+
+    background-image: url("../img/cat-case-desktop.jpg");
+    background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/cat-case-desktop@2x.jpg");
+      background-size: 490px auto;
+    }
   }
 }

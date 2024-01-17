@@ -5,13 +5,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/32.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo" href="index.html">
-      <img class="main-header__logo-image" src="img/logo-mobile.svg" alt="Cat Energy" width="33" height="38">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg" width="60" height="50">
+        <img class="main-header__logo-image" src="img/logo-mobile.svg" alt="Cat Energy" width="33" height="38">
+      </picture>
       <img class="main-header__logo-cat-energy" src="img/logo-header.svg" alt="Cat Energy" width="101" height="18">
     </a>
     <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -43,7 +49,16 @@
         <h1 class="catalog__title">Каталог продукции</h1>
         <ul class="catalog__product-list">
           <li class="catalog__product-item">
-            <img src="img/catalog/cat-energy-1.png" alt="вкус курицы маленький" width="68" height="86">
+            <picture>
+              <source media="(min-width: 1220px)"
+                srcset="img/catalog/cat-energy-1/cat-energy-1-desktop.png 1x, img/catalog/cat-energy-1/cat-energy-1-desktop@2x.png 2x"
+                with="169" height="210">
+              <source media="(min-width: 768px)"
+                srcset="img/catalog/cat-energy-1/cat-energy-1-tablet.png 1x, img/catalog/cat-energy-1/cat-energy-1-tablet@2x.png 2x"
+                with="200" height="210">
+              <img src="img/catalog/cat-energy-1/cat-energy-1.png" width="140" height="107"
+                srcset="img/catalog/cat-energy-1/cat-energy-1@2x.png 2x" alt="вкус курицы маленький">
+            </picture>
             <div class="catalog__container">
               <h2 class="catalog__title-product">Cat Energy PRO 500 г</h2>
               <table class="catalog__info">
@@ -76,7 +91,16 @@
             <a class="catalog__button" href="#">Заказать</a>
           </li>
           <li class="catalog__product-item">
-            <img src="img/catalog/cat-energy-2.png" alt="вкус курицы большой" width="84" height="100">
+            <picture>
+              <source media="(min-width: 1220px)"
+                srcset="img/catalog/cat-energy-2/cat-energy-2-desktop.png 1x, img/catalog/cat-energy-2/cat-energy-2-desktop@2x.png 2x"
+                with="169" height="210">
+              <source media="(min-width: 768px)"
+                srcset="img/catalog/cat-energy-2/cat-energy-2-tablet.png 1x, img/catalog/cat-energy-2/cat-energy-2-tablet@2x.png 2x"
+                with="200" height="210">
+              <img src="img/catalog/cat-energy-2/cat-energy-2.png" width="140" height="107"
+                srcset="img/catalog/cat-energy-2/cat-energy-2@2x.png 2x" alt="вкус курицы маленький">
+            </picture>
             <div class="catalog__container">
               <h2 class="catalog__title-product">Cat Energy PRO 1000 г</h2>
               <table class="catalog__info">
@@ -109,7 +133,16 @@
             <a class="catalog__button" href="#">Заказать</a>
           </li>
           <li class="catalog__product-item">
-            <img src="img/catalog/cat-energy-3.png" alt="вкус рыбы маленький" width="68" height="86">
+            <picture>
+              <source media="(min-width: 1220px)"
+                srcset="img/catalog/cat-energy-3/cat-energy-3-desktop.png 1x, img/catalog/cat-energy-3/cat-energy-3-desktop@2x.png 2x"
+                with="169" height="210">
+              <source media="(min-width: 768px)"
+                srcset="img/catalog/cat-energy-3/cat-energy-3-tablet.png 1x, img/catalog/cat-energy-3/cat-energy-3-tablet@2x.png 2x"
+                with="200" height="210">
+              <img src="img/catalog/cat-energy-3/cat-energy-3.png" width="140" height="107"
+                srcset="img/catalog/cat-energy-3/cat-energy-3@2x.png 2x" alt="вкус курицы маленький">
+            </picture>
             <div class="catalog__container">
               <h2 class="catalog__title-product">Cat Energy PRO 500 г</h2>
               <table class="catalog__info">
@@ -142,7 +175,16 @@
             <a class="catalog__button" href="#">Заказать</a>
           </li>
           <li class="catalog__product-item">
-            <img src="img/catalog/cat-energy-4.png" alt="вкус рыбы большой" width="84" height="100">
+            <picture>
+              <source media="(min-width: 1220px)"
+                srcset="img/catalog/cat-energy-4/cat-energy-4-desktop.png 1x, img/catalog/cat-energy-4/cat-energy-4-desktop@2x.png 2x"
+                with="169" height="210">
+              <source media="(min-width: 768px)"
+                srcset="img/catalog/cat-energy-4/cat-energy-4-tablet.png 1x, img/catalog/cat-energy-4/cat-energy-4-tablet@2x.png 2x"
+                with="200" height="210">
+              <img src="img/catalog/cat-energy-4/cat-energy-1.png" width="140" height="107"
+                srcset="img/catalog/cat-energy-4/cat-energy-1@2x.png 2x" alt="вкус курицы маленький">
+            </picture>
             <div class="catalog__container">
               <h2 class="catalog__title-product">Cat Energy PRO 1000 г</h2>
               <table class="catalog__info">
@@ -175,7 +217,16 @@
             <a class="catalog__button" href="#">Заказать</a>
           </li>
           <li class="catalog__product-item">
-            <img src="img/catalog/cat-energy-5.png" alt="вкус гречки маленький" width="68" height="86">
+            <picture>
+              <source media="(min-width: 1220px)"
+                srcset="img/catalog/cat-energy-5/cat-energy-5-desktop.png 1x, img/catalog/cat-energy-5/cat-energy-5-desktop@2x.png 2x"
+                with="169" height="210">
+              <source media="(min-width: 768px)"
+                srcset="img/catalog/cat-energy-5/cat-energy-5-tablet.png 1x, img/catalog/cat-energy-5/cat-energy-5-tablet@2x.png 2x"
+                with="200" height="210">
+              <img src="img/catalog/cat-energy-5/cat-energy-5.png" width="140" height="107"
+                srcset="img/catalog/cat-energy-5/cat-energy-5@2x.png 2x" alt="вкус курицы маленький">
+            </picture>
             <div class="catalog__container">
               <h2 class="catalog__title-product">Cat Energy PRO 500 г</h2>
               <table class="catalog__info">
@@ -208,7 +259,16 @@
             <a class="catalog__button" href="#">Заказать</a>
           </li>
           <li class="catalog__product-item">
-            <img src="img/catalog/cat-energy-6.png" alt="вкус гречки большой" width="84" height="100">
+            <picture>
+              <source media="(min-width: 1220px)"
+                srcset="img/catalog/cat-energy-6/cat-energy-6-desktop.png 1x, img/catalog/cat-energy-6/cat-energy-6-desktop@2x.png 2x"
+                with="169" height="210">
+              <source media="(min-width: 768px)"
+                srcset="img/catalog/cat-energy-6/cat-energy-6-tablet.png 1x, img/catalog/cat-energy-6/cat-energy-6-tablet@2x.png 2x"
+                with="200" height="210">
+              <img src="img/catalog/cat-energy-6/cat-energy-6.png" width="140" height="107"
+                srcset="img/catalog/cat-energy-6/cat-energy-6@2x.png 2x" alt="вкус курицы маленький">
+            </picture>
             <div class="catalog__container">
               <h2 class="catalog__title-product">Cat Energy PRO 1000 г</h2>
               <table class="catalog__info">
@@ -241,7 +301,16 @@
             <a class="catalog__button" href="#">Заказать</a>
           </li>
           <li class="catalog__product-item">
-            <img src="img/catalog/cat-energy-7.png" alt="вкус риса маленький" width="68" height="86">
+            <picture>
+              <source media="(min-width: 1220px)"
+                srcset="img/catalog/cat-energy-7/cat-energy-7-desktop.png 1x, img/catalog/cat-energy-7/cat-energy-7-desktop@2x.png 2x"
+                with="169" height="210">
+              <source media="(min-width: 768px)"
+                srcset="img/catalog/cat-energy-7/cat-energy-7-tablet.png 1x, img/catalog/cat-energy-7/cat-energy-7-tablet@2x.png 2x"
+                with="200" height="210">
+              <img src="img/catalog/cat-energy-7/cat-energy-7.png" width="140" height="107"
+                srcset="img/catalog/cat-energy-7/cat-energy-7@2x.png 2x" alt="вкус курицы маленький">
+            </picture>
             <div class="catalog__container">
               <h2 class="catalog__title-product">Cat Energy PRO 500 г</h2>
               <table class="catalog__info">
