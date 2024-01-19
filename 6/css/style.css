@@ -542,41 +542,23 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
-.advantages__item--useful::before {
-  background-image: url("../img/icon-leaf.svg");
-}
 @media (min-width: 768px) {
-  .advantages__item--useful::before {
+  .advantages__item::before {
     width: 80px;
     height: 80px;
   }
+}
+.advantages__item--useful::before {
+  background-image: url("../img/icon-leaf.svg");
 }
 .advantages__item--modern::before {
   background-image: url("../img/icon-powder.svg");
 }
-@media (min-width: 768px) {
-  .advantages__item--modern::before {
-    width: 80px;
-    height: 80px;
-  }
-}
 .advantages__item--functional::before {
   background-image: url("../img/icon-eat.svg");
 }
-@media (min-width: 768px) {
-  .advantages__item--functional::before {
-    width: 80px;
-    height: 80px;
-  }
-}
 .advantages__item--result::before {
   background-image: url("../img/icon-time.svg");
-}
-@media (min-width: 768px) {
-  .advantages__item--result::before {
-    width: 80px;
-    height: 80px;
-  }
 }
 @media (min-width: 768px) {
   .advantages__item {
