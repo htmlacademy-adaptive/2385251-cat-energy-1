@@ -76,6 +76,11 @@
     background-color: #68b738;
     background-repeat: no-repeat;
     background-position: center;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
   }
 
   &--useful::before {
