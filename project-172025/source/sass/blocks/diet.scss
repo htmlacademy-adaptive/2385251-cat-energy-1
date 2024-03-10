@@ -1,0 +1,127 @@
+.diet__wrapper {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 82px auto 71px auto;
+  }
+}
+
+.diet__list {
+  @include reset-list;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+
+    width: 1220px;
+    margin: 0 auto 0 auto;
+
+    gap: 80px;
+  }
+}
+
+.diet__item {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-bottom: 20px;
+  padding: 21px 33px 18px 20px;
+
+  background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+
+    box-sizing: border-box;
+    padding: 77px 63px 57px 52px;
+
+
+    &:first-child {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    padding: 47px 61px 55px 52px;
+  }
+}
+
+.diet__title {
+  margin: 0;
+  margin-top: 9px;
+  margin-left: 20px;
+
+  font-weight: 400;
+  line-height: 37px;
+
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.diet__intro {
+  width: 100%;
+  margin: 22px 0 15px 0;
+  padding-bottom: 23px;
+
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 18px;
+
+  color: #444444;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    width: 340px;
+    margin-bottom: 48px;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #000000;
+    border: none;
+  }
+}
+
+.diet__button {
+  line-height: 16px;
+
+  text-decoration: none;
+  text-transform: uppercase;
+
+  color: #000000;
+
+  &:hover {
+    background-image: url("../img/icon_arrow");
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+
+    text-align: center;
+  }
+}
+
+.diet__arrow {
+  margin-left: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 25px;
+  }
+}
