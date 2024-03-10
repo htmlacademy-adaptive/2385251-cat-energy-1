@@ -2,10 +2,9 @@
   display: flex;
   justify-content: center;
 
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  margin-top: 18px;
+  margin-bottom: 13px;
+  padding: 20px;
 
   list-style: none;
 
@@ -17,19 +16,23 @@
   gap: 24px;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    margin: 0 auto;
+    margin-left: 100px;
     padding: 0;
+    padding-top: 7px;
 
     border: none;
   }
 
   @media (min-width: $desktop-width) {
+    margin-left: 228px;
+
     border: none;
   }
 }
 
 .social__link {
-  &:hover path {
+  &:hover svg {
     fill: #68b738;
   }
 

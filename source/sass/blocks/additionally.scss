@@ -1,22 +1,32 @@
 .additionally__title {
-  margin: 0;
-  margin-bottom: 36px;
+  width: max-content;
+  margin: 23px 0 42px -20px;
+  padding: 0 20px 0 20px;
 
-  font-size: 24px;
-  line-height: 26px;
+  font-weight: 400;
+
+  background-color: #ffffff;
 
   @include form-title;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 57px;
+    margin: 67px 0 62px -40px;
+    padding: 0 41px 0 39px;
 
     font-size: 36px;
     line-height: 36px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 95px 0 62px -32px;
+    padding: 0 41px 0 40px;
+  }
 }
 
 .additionally__filter-list {
-  margin-bottom: 34px;
+  margin: 0;
+  margin-left: 46px;
+  padding: 0;
 
   font-size: 16px;
   line-height: 18px;
@@ -26,19 +36,82 @@
   @media (min-width: $tablet-width) {
     display: grid;
 
-    margin-bottom: 52px;
+    margin-left: 40px;
 
-    font-size: 20px;
-    line-height: normal;
-
-    grid-template-columns: repeat(2, 221px);
-    gap: 32px 123px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 108px;
+    row-gap: 42px;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-direction: row;
+    margin-left: 48px;
 
-    margin-bottom: 60px;
+    grid-template-columns: 211px 210px 210px 196px;
+    grid-template-rows: 1fr;
+    column-gap: 115px;
+  }
+}
+
+.additionally__control {
+  position: relative;
+}
+
+.additionally__control-mark {
+  position: absolute;
+  top: -20%;
+  left: -45px;
+
+  width: 30px;
+  height: 30px;
+
+  border: 1px solid rgb(205, 205, 205);
+  background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    top: -55%;
+    left: -43px;
+
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.additionally__filter-item {
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.additionally__control-label {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 18px;
+
+  text-transform: uppercase;
+
+  color: #444444;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 20px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+
+.additionally__input[type="checkbox"]:checked + .additionally__control-mark--checkbox {
+  background-image: url("../img/mark-phone.svg");
+  background-repeat: no-repeat;
+  background-position: top 8px left 6px;
+  background-size: 19px 15px;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/mark.svg");
+    background-position: top 11px left 8px;
+    background-size: 24px 19px;
   }
 }
