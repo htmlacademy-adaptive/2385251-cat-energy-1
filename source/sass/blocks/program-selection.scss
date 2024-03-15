@@ -51,6 +51,7 @@
 }
 
 .program-selection__description {
+  width: 268px;
   margin: 0;
   margin-bottom: 39px;
 
@@ -61,6 +62,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    width: 323px;
     margin-bottom: 0;
 
     font-size: 20px;

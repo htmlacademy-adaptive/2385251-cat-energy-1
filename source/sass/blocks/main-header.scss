@@ -66,6 +66,14 @@
     margin-left: 8px;
     padding: 0;
   }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .main-header__logo-image {

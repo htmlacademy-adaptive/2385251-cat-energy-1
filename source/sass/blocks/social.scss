@@ -17,7 +17,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
-    margin-left: 100px;
+    margin-left: 150px;
     padding: 0;
     padding-top: 7px;
 
@@ -25,7 +25,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 228px;
+    margin-left: 235px;
 
     border: none;
   }
@@ -36,7 +36,11 @@
     fill: #68b738;
   }
 
-  &:focus path {
+  &:focus {
     opacity: 0.3;
   }
+}
+
+.social__link svg {
+  fill: #666666;
 }

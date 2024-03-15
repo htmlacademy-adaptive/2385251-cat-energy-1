@@ -187,7 +187,7 @@
   margin-bottom: 18px;
   padding: 10px 44px;
 
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
@@ -224,7 +224,7 @@
 .form__legend {
   margin-left: 64px;
 
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
 
@@ -253,14 +253,14 @@
   padding: 15px 20px 10px;
   padding-left: 15px;
 
-  font-family: var(--accent-font);
+  font-family: inherit;
   font-size: 16px;
   line-height: 18px;
 
   text-transform: uppercase;
 
-  color: var(--c-dark-gray);
-  border: 1px solid rgb(205, 205, 205);
+  color: rgb(229, 229, 229);
+  border: 1px solid rgb(231, 231, 231);
 
   @media (min-width: $tablet-width) {
     padding: 11px 20px;
@@ -277,6 +277,14 @@
     font-family: inherit;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  &:hover {
+    border: 1px solid rgb(205, 205, 205);
+  }
+
+  &:focus {
+    outline: 2px solid rgb(68, 68, 68);
   }
 }
 
@@ -325,6 +333,14 @@
 
 .form__filter-item {
   position: relative;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
 }
 
 .form__fieldset--addition {
@@ -480,6 +496,14 @@
     margin-left: 8px;
     padding-top: 9px;
     padding-bottom: 7px;
+  }
+
+  &:hover {
+    border: 1px solid rgb(205, 205, 205);
+  }
+
+  &:focus {
+    outline: 2px solid rgb(68, 68, 68);
   }
 }
 
