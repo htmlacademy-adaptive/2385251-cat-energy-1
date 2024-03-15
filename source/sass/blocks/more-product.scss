@@ -40,7 +40,7 @@
   margin-bottom: 20px;
   margin-left: auto;
 
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 12px;
   font-weight: 400;
   font-style: normal;
@@ -89,7 +89,7 @@
   }
 
   &:focus {
-    background-color: #ebebeb;
+    opacity: 0.7;
   }
 
   @media (min-width: $tablet-width) {

@@ -1,9 +1,13 @@
 .copyright__academy-text {
-  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+  margin-top: 16px;
   margin-right: auto;
   margin-bottom: auto;
 
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
@@ -14,14 +18,31 @@
 
   color: #444444;
 
+  fill: #666666;
+
   @media (min-width: $tablet-width) {
-    width: 144px;
+    margin-top: 7px;
     margin-right: 0;
+    margin-left: 23px;
+
+    gap: 23px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:hover svg,
+  &:focus svg,
+  &:active svg {
+    fill: #68b738;
+  }
+
+  &:active svg {
+    opacity: 0.3;
   }
 }
 
-.copyright__academy-logo {
-  @media (min-width: $tablet-width) {
-    margin-left: 23px;
-  }
+.copyright__academy-text svg {
+  margin-top: -8px;
 }

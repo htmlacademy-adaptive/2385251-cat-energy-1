@@ -69,7 +69,36 @@
     width: 570px;
     margin-left: 5px;
   }
+
+  &:hover svg {
+    stroke: rgb(104, 183, 56);
+  }
+
+  &:active svg {
+    opacity: 0.6;
+
+    stroke: rgb(34, 34, 34);
+  }
 }
+
+.contacts__item--email svg {
+  position: absolute;
+  top: 47%;
+  right: 20px;
+
+  width: 18px;
+  height: 14px;
+
+  transform: translateY(-50%);
+
+  background-image: url("../img/email.svg");
+
+  @media (min-width: $tablet-width) {
+    top: 50%;
+    right: 15px;
+  }
+}
+
 
 .contacts__form-label {
   margin-right: 6px;
@@ -92,7 +121,7 @@
 
   text-transform: uppercase;
 
-  border: 1px solid #cdcdcd;
+  border: 1px solid rgb(231, 231, 231);
 
   @media (min-width: $tablet-width) {
     width: 244px;
@@ -100,6 +129,14 @@
 
     font-size: 20px;
     line-height: 30px;
+  }
+
+  &:hover {
+    border: 1px solid rgb(205, 205, 205);
+  }
+
+  &:focus {
+    outline: 2px solid rgb(68, 68, 68);
   }
 }
 
@@ -119,26 +156,6 @@
   @media (min-width: $desktop-width) {
     flex-grow: 1;
   }
-
-  &::before {
-    content: "";
-
-    position: absolute;
-    top: 47%;
-    right: 20px;
-
-    width: 18px;
-    height: 14px;
-
-    transform: translateY(-50%);
-
-    background-image: url("../img/email.svg");
-
-    @media (min-width: $tablet-width) {
-      top: 50%;
-      right: 15px;
-    }
-  }
 }
 
 .contacts__item--phone {
@@ -151,24 +168,22 @@
   @media (min-width: $tablet-width) {
     flex-grow: 1;
   }
+}
 
-  &::before {
-    content: "";
+.contacts__item--phone svg {
+  position: absolute;
+  top: 46%;
+  right: 21px;
 
-    position: absolute;
-    top: 46%;
-    right: 21px;
+  width: 16px;
+  height: 16px;
 
-    width: 16px;
-    height: 16px;
+  transform: translateY(-50%);
 
-    transform: translateY(-50%);
+  background-image: url("../img/phone.svg");
 
-    background-image: url("../img/phone.svg");
-
-    @media (min-width: $tablet-width) {
-      right: 15px;
-    }
+  @media (min-width: $tablet-width) {
+    right: 15px;
   }
 }
 
