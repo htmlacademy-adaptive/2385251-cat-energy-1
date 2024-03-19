@@ -43,7 +43,7 @@
 
     position: absolute;
     z-index: -1;
-    top: 40px;
+    top: 41px;
 
     width: 100%;
     height: 2px;
@@ -51,7 +51,7 @@
     background-color: #68b738;
 
     @media (min-width: $tablet-width) {
-      top: 59px;
+      top: 57px;
     }
 
     @media (min-width: $desktop-width) {
@@ -97,14 +97,14 @@
 }
 
 .form__main-wrapper .form__field-group:not(:last-child) {
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 18px;
+    margin-bottom: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 579px;
+    width: 570px;
   }
 }
 
@@ -125,10 +125,10 @@
   margin-top: -1px;
   padding: 0 20px 25px;
 
-  gap: 52px;
+  gap: 54px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 57px 31px 71px;
+    padding: 0 70px 31px 71px;
 
     gap: 72px;
   }
@@ -160,7 +160,7 @@
 
 .form__fieldset--diet {
   @media (min-width: $tablet-width) {
-    padding: 27px 28px;
+    padding: 29px 28px;
 
     border: 1px solid rgb(231, 231, 231);
   }
@@ -209,7 +209,6 @@
 
   @media (min-width: $desktop-width) {
     width: 570px;
-    margin-left: 8px;
   }
 
   &:hover {
@@ -260,7 +259,8 @@
   text-transform: uppercase;
 
   color: rgb(229, 229, 229);
-  border: 1px solid rgb(231, 231, 231);
+  border: none;
+  outline: 1px solid rgb(231, 231, 231);
 
   @media (min-width: $tablet-width) {
     padding: 11px 20px;
@@ -280,7 +280,7 @@
   }
 
   &:hover {
-    border: 1px solid rgb(205, 205, 205);
+    outline: 1px solid rgb(205, 205, 205);
   }
 
   &:focus {
@@ -309,7 +309,6 @@
   @media (min-width: $desktop-width) {
     max-width: 117px;
     margin: 0;
-    margin-left: 10px;
   }
 }
 
@@ -359,11 +358,11 @@
     background-color: #68b738;
 
     @media (min-width: $tablet-width) {
-      top: 89px;
+      top: 111px;
     }
 
     @media (min-width: $desktop-width) {
-      top: 117px;
+      top: 118px;
     }
   }
 }
@@ -408,7 +407,7 @@
 
     position: absolute;
     z-index: -1;
-    top: 37px;
+    top: 39px;
 
     width: 100%;
     height: 2px;
@@ -416,13 +415,13 @@
     background-color: rgb(104, 183, 56);
 
     @media (min-width: $tablet-width) {
-      top: 84px;
+      top: 86px;
 
       margin-bottom: -25px;
     }
 
     @media (min-width: $desktop-width) {
-      top: 90px;
+      top: 92px;
     }
   }
 
@@ -438,7 +437,7 @@
 
 .form__comment-title {
   width: max-content;
-  margin: 21px 0 38px -20px;
+  margin: 23px 0 38px -20px;
   padding: 0 22px 0 20px;
 
   font-family: inherit;
@@ -452,7 +451,7 @@
   background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
-    margin: 64px 0 83px -41px;
+    margin: 64px 0 87px -41px;
     padding: 0 43px 0 40px;
 
     font-size: 36px;
@@ -460,9 +459,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 68px;
+    margin-top: 70px;
     margin-bottom: 78px;
-    margin-left: -31px;
+    margin-left: -40px;
     padding: 0 43px 0 39px;
   }
 }
@@ -479,11 +478,11 @@
   resize: none;
   text-transform: uppercase;
 
-  border: 1px solid rgb(231, 231, 231);
+  border: none;
+  outline: 1px solid rgb(231, 231, 231);
 
   @media (min-width: $tablet-width) {
-    height: 174px;
-    min-height: 50px;
+    min-height: 150px;
     padding: 12px 19px;
 
     font-size: 20px;
@@ -493,13 +492,12 @@
   @media (min-width: $desktop-width) {
     width: 1180px;
     height: 157px;
-    margin-left: 8px;
     padding-top: 9px;
     padding-bottom: 7px;
   }
 
   &:hover {
-    border: 1px solid rgb(205, 205, 205);
+    outline: 1px solid rgb(205, 205, 205);
   }
 
   &:focus {
@@ -508,10 +506,14 @@
 }
 
 .form__fieldset--contacts input {
-  padding-right: 50px;
-  padding-left: 10px;
+  padding-right: 42px;
+  padding-left: 14px;
 
   @media (min-width: $tablet-width) {
     padding-left: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 21px;
   }
 }

@@ -8,10 +8,14 @@
   @media (min-width: $tablet-width) {
     margin-top: 130px;
     margin-bottom: 45px;
+    padding-right: 30px;
+    padding-left: 30px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 82px auto 0 auto;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
@@ -35,8 +39,8 @@
   display: flex;
   flex-wrap: wrap;
 
-  margin-bottom: 23px;
-  padding: 21px 33px 18px 20px;
+  margin-bottom: 20px;
+  padding: 21px 33px 23px 20px;
 
   background-color: #f2f2f2;
 
@@ -44,27 +48,32 @@
     display: block;
 
     box-sizing: border-box;
-    padding: 69px 63px 58px 62px;
+    padding: 77px 63px 56px 53px;
+  }
 
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    min-height: 374px;
+    margin-bottom: 32px;
+    padding: 47px 61px 50px 37px;
+  }
 
-    &:first-child {
-      margin-bottom: 30px;
+  &:first-child {
+    margin-bottom: 20px;
 
-      @media (min-width: $desktop-width) {
-        margin-left: 6px;
-      }
+    @media (min-width: $tablet-width) {
+      margin-bottom: 32px;
     }
 
     @media (min-width: $desktop-width) {
-      width: 100%;
-      padding: 47px 61px 55px 37px;
+      padding-bottom: 40px;
     }
+  }
 
-    &:last-child {
-      @media (min-width: $desktop-width) {
-        width: 100%;
-        margin-left: -2px;
-      }
+  &:last-child {
+    @media (min-width: $desktop-width) {
+      width: 100%;
+      padding-bottom: 47px;
     }
   }
 }
@@ -97,30 +106,30 @@
   @media (min-width: $desktop-width) {
     margin: auto;
     margin-top: 30px;
-    margin-left: -4px;
+    margin-left: 0;
   }
 }
 
 .diet__title--weight {
-  margin-top: 11px;
+  margin-top: 8px;
   margin-left: 12px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 7px;
+    margin-top: 3px;
     margin-left: 1px;
   }
 
 
   @media (min-width: $desktop-width) {
     margin-top: 31px;
-    margin-left: -17px;
+    margin-left: -19px;
   }
 }
 
 .diet__intro {
   width: 100%;
   margin: 22px 0 15px 0;
-  padding-bottom: 23px;
+  padding-bottom: 21px;
 
   font-family: "Lato", "Arial", sans-serif;
   font-size: 14px;
@@ -147,9 +156,11 @@
 
 .diet__intro--fit {
   margin-top: 20px;
+  margin-bottom: 18px;
 
   @media (min-width: $tablet-width) {
     margin-top: 23px;
+    margin-bottom: 31px;
   }
 
   @media (min-width: $desktop-width) {
@@ -162,13 +173,19 @@
 }
 
 .diet__intro--weight {
-  margin-top: 18px;
+  margin-top: 17px;
+  margin-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 24px;
+    margin-bottom: 29px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 451px;
-    margin-top: 34px;
-    margin-bottom: 4px;
-    margin-left: 20px;
+    margin-top: 33px;
+    margin-bottom: 6px;
+    margin-left: 15px;
   }
 }
 
@@ -195,7 +212,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 17px;
+    margin-left: 15px;
   }
 }
 
@@ -204,7 +221,7 @@
   margin-left: 1px;
 
   @media (min-width: $desktop-width) {
-    margin-left: 19px;
+    margin-left: 15px;
   }
 }
 
@@ -224,8 +241,8 @@
 .diet__cat-back {
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 73px;
-    right: 57px;
+    top: 79px;
+    right: 63px;
   }
 
   @media (min-width: $desktop-width) {
@@ -236,12 +253,12 @@
 }
 
 .diet__cat-back--weight {
-  margin-top: 5px;
+  margin-top: 2px;
   margin-left: -8px;
 
   @media (min-width: $tablet-width) {
     top: 90px;
-    right: 22px;
+    right: 29px;
   }
 
   @media (min-width: $desktop-width) {
@@ -253,7 +270,7 @@
 .diet__cat-back--fit {
   @media (min-width: $desktop-width) {
     margin-top: -2px;
-    margin-left: 20px;
+    margin-left: 15px;
   }
 }
 
