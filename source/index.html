@@ -28,7 +28,7 @@
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
+        <ul class="main-nav__list site-list site-list--index">
           <li class="site-list__item site-list__item--main site-list__item--active-index">
             <a class="site-list__link-index">
               Главная
@@ -66,7 +66,9 @@
           <img class="announcement__can" src="img/index-can-mobile.png" width="280" height="270"
             srcset="img/index-can-mobile@2x.png 2x" alt="can-cat-food">
         </picture>
-        <a class="announcement__selection" href="form.html">Подобрать программу</a>
+        <div class="announcement__shell">
+          <a class="announcement__selection" href="form.html">Подобрать программу</a>
+        </div>
       </div>
     </section>
     <section class="diet">
@@ -137,8 +139,7 @@
             <p class="advantages__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
           </li>
           <li class="advantages__item advantages__item--result">
-            <p class="advantages__description">Уже через месяц наслаждайтесь изменениями к лучшему&nbsp; &nbsp;вашего
-              питомца!
+            <p class="advantages__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего&nbsp;питомца!
             </p>
           </li>
         </ul>
@@ -150,10 +151,8 @@
         <div class="example__wrapper">
           <div class="example__container">
             <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
-              Energy
-              Slim. Отличный результат без&nbsp; изнуряющих тренировок! При этом он не менял своих привычек и
-              по-прежнему
-              спит по 16 часов в день.</p>
+              Energy Slim. Отличный результат без&nbsp;изнуряющих тренировок! При этом он не менял своих привычек и
+              по-прежнему спит по 16 часов в день.</p>
             <div class="example__result-wrapper">
               <dl class="example__list">
                 <div class="example__list-wrapper">
@@ -191,7 +190,7 @@
               <source media="(min-width: 768px)"
                 srcset="img/slider-image-tablet-before.png 1x, img/slider-image-tablet-before@2x.png 2x" width="560"
                 height="512">
-              <img class="example__slider-image example__slider--before" src="img/slider-image-before.png"
+              <img class="example__slider-image example__slider-image--before" src="img/slider-image-before.png"
                 alt="кот Борис до" width="280" height="256" srcset="img/slider-image-before@2x.png 2x">
             </picture>
             <picture class="example__picture">
@@ -204,7 +203,7 @@
               <source media="(min-width: 768px)"
                 srcset="img/slider-image-tablet-after.png 1x, img/slider-image-tablet-after@2x.png 2x" width="560"
                 height="512">
-              <img class="example__slider-image example__slider--after" src="img/slider-image-after.png"
+              <img class="example__slider-image example__slider-image--after" src="img/slider-image-after.png"
                 alt="кот Борис после" width="280" height="256" srcset="img/slider-image-after@2x.png 2x">
             </picture>
             <button class="example__button" type="button">
@@ -243,10 +242,7 @@
   <footer class="main-footer">
     <div class="main-footer__wrapper">
       <a class="main-footer__logo" href="index.html">
-        <picture>
-          <source type="image/webp" srcset="img/logo-footure.webp" width="128" height="24">
-          <img class="main-footer__logo-image" src="img/logo-footure.svg" alt="Cat Energy" width="128" height="24">
-        </picture>
+        <img class="main-footer__logo-image" src="img/logo-footure.svg" alt="Cat Energy" width="128" height="24">
         <span class="visually-hidden">Магазин Cat energy.</span>
       </a>
       <ul class="social">

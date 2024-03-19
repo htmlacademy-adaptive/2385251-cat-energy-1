@@ -3,7 +3,7 @@
   justify-content: space-between;
 
   width: 100%;
-  margin-top: 16px;
+  margin-top: 15px;
   margin-right: auto;
   margin-bottom: auto;
 
@@ -21,9 +21,9 @@
   fill: #666666;
 
   @media (min-width: $tablet-width) {
-    margin-top: 7px;
+    margin-top: 9px;
     margin-right: 0;
-    margin-left: 23px;
+    margin-left: 21px;
 
     gap: 23px;
   }
@@ -44,5 +44,5 @@
 }
 
 .copyright__academy-text svg {
-  margin-top: -8px;
+  margin-top: -7px;
 }
