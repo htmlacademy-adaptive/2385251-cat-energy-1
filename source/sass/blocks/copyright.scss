@@ -43,6 +43,14 @@
   }
 }
 
+.copyright__academy-text--form {
+  margin-top: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 9px;
+  }
+}
+
 .copyright__academy-text svg {
   margin-top: -7px;
 }
