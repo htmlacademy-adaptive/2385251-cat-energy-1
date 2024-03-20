@@ -104,7 +104,7 @@
 
     position: absolute;
     top: -20%;
-    left: -45px;
+    left: -47px;
 
     width: 30px;
     height: 30px;
@@ -113,10 +113,10 @@
     background-color: #ffffff;
 
     @media (min-width: $tablet-width) {
-      top: -55%;
-      left: -43px;
+      top: -39%;
+      left: -41px;
 
-      width: 40px;
+      width: 38px;
       height: 40px;
     }
 
@@ -139,7 +139,7 @@
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/mark.svg");
-    background-position: top 11px left 8px;
+    background-position: top 12px left 7px;
     background-size: 24px 19px;
   }
 
